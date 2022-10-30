@@ -1,0 +1,16 @@
+.quickshopBtn {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  bottom: 92px;
+  right: 16px;
+  padding: 0;
+  transform: translateY(50%);
+  z-index: 10;
+}
+
+.quickshopBtn:active {
+  filter: brightness(90%);
+  transform: translateY(50%) scale(0.95);
+}

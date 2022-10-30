@@ -1,39 +1,92 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway'),
+    url(./fonts/Raleway/Raleway-Regular.ttf) format('truetype');
+  font-weight: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway'),
+    url(./fonts/Raleway/Raleway-Light.ttf) format('truetype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway'),
+    url(./fonts/Raleway/Raleway-Medium.ttf) format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway'),
+    url(./fonts/Raleway/Raleway-SemiBold.ttf) format('truetype');
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway'),
+    url(./fonts/Raleway/Raleway-Bold.ttf) format('truetype');
+  font-weight: 700;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'),
+    url(./fonts/Roboto/Roboto-Regular.ttf) format('truetype');
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+@font-face {
+  font-family: 'RobotoCondensed';
+  src: local('Roboto_Condensed'),
+    url(./fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf) format('truetype');
+  font-weight: 700;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+@font-face {
+  font-family: 'SourceSansPro';
+  src: local('SourceSansPro'),
+    url(./fonts/SourceSansPro/SourceSansPro-Regular.ttf) format('truetype');
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+main {
+  padding: 140px 101px;
+}
+
+p {
+  font-family: 'Roboto';
+}
+
+a {
+  color: #1d1f22;
+  text-decoration: none;
+}
+
+button {
+  font-family: 'Raleway', sans-serif;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:enabled:active {
+  filter: brightness(0.9);
+}
+
+button:disabled {
+  cursor: not-allowed;
 }

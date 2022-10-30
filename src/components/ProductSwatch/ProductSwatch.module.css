@@ -1,0 +1,78 @@
+.name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #1d1f22;
+  font-family: 'RobotoCondensed', sans-serif;
+  text-transform: uppercase;
+}
+
+.name.mini {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: capitalize;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.options > * {
+  min-width: max-content;
+}
+
+.options > button.mini {
+  width: 24px;
+  height: 24px;
+  padding: 5px;
+  min-width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textOption {
+  width: 63px;
+  height: 45px;
+  border: 1px solid #1d1f22;
+  background-color: #ffffff;
+  color: #292929;
+  display: inline-block;
+  text-align: center;
+  font-family: 'SourceSansPro', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.textOption:hover {
+  background-color: #1d1f22;
+  color: #ffffff;
+}
+
+.textOption.selected {
+  background-color: #1d1f22;
+  color: #ffffff;
+}
+
+.swatchOption {
+  width: 32px;
+  height: 32px;
+  outline-offset: 2px;
+  cursor: pointer;
+  border: solid 1px #d3d2d5;
+}
+
+.swatchOption.selected {
+  outline: 1px solid #5ece7b;
+}
+
+.swatchOption:hover {
+  outline: 1px solid #5ece7b;
+}

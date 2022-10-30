@@ -1,0 +1,89 @@
+.wrapper {
+  position: fixed;
+  top: 80px;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.overlay {
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background-color: rgba(57, 55, 72, 0.22);
+  position: absolute;
+  pointer-events: auto;
+}
+
+.cartMini {
+  z-index: 40;
+  width: 330px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  right: 101px;
+  height: max-content;
+  min-height: 250px;
+  background-color: #ffffff;
+  padding-block: 32px;
+  padding-inline: 16px;
+  pointer-events: auto;
+}
+
+.emptyCart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 120px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.quantityText {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  padding-inline: 8px;
+  padding-bottom: 30px;
+}
+
+.quantityText > span {
+  font-weight: 400;
+}
+
+.totalPrice {
+  min-height: 20px;
+  height: max-content;
+  padding-block: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.totalPrice > .label {
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.totalPrice > .price {
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.buttonGroup {
+  display: flex;
+  row-gap: 12px;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.buttonGroup .button {
+  width: 140px;
+  height: 43px;
+}

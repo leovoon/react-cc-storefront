@@ -1,0 +1,37 @@
+.cart {
+  cursor: pointer;
+  width: 38px;
+  height: inherit;
+  place-items: center;
+  position: relative;
+}
+
+.cartIcon {
+  position: absolute;
+  height: inherit;
+  display: grid;
+  place-items: center;
+  inset: 0;
+  z-index: 20;
+}
+
+.cartQuantity {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  position: absolute;
+  bottom: 80%;
+  left: 60%;
+  transform: translate(-50%, 50%);
+  background-color: #1d1f22;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  border-radius: 50%;
+  width: max-content;
+  min-width: 20px;
+  height: 20px;
+  z-index: 10;
+}

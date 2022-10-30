@@ -1,0 +1,14 @@
+.cartItemList {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.cartItemList:last-child {
+  border-bottom: none;
+}
+
+.cartItemList.mini {
+  overflow-y: auto;
+  max-height: 60vh;
+  min-height: 200px;
+  border: none;
+}

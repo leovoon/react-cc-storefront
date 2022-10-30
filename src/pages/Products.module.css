@@ -1,0 +1,11 @@
+.products__content {
+  position: relative;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 160%;
+  color: #1d1f22;
+  text-transform: capitalize;
+}

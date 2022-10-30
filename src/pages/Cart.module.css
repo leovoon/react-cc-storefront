@@ -1,0 +1,22 @@
+.heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #1d1f22;
+  margin-bottom: 55px;
+}
+
+.emptyCart {
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.orderButton {
+  width: 279px;
+  height: 43px;
+}

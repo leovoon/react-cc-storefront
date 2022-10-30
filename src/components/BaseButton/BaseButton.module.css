@@ -1,0 +1,17 @@
+button {
+  font-weight: 600;
+  line-height: 120%;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.baseButton {
+  background-color: #5ece7b;
+  color: #ffffff;
+}
+
+.baseButton__plain {
+  background-color: #ffffff;
+  color: #1d1f22;
+  border: 1px solid #1d1f22;
+}

@@ -1,0 +1,21 @@
+.brand {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 27px;
+  color: #1d1f22;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 27px;
+  color: #1d1f22;
+}
+
+.brand.mini,
+.name.mini {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 80%;
+}

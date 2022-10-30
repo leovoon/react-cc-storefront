@@ -1,0 +1,15 @@
+.productDetail {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr;
+  gap: 101px;
+  padding-right: 101px;
+}
+
+@media (max-width: 960px) {
+  .productDetail {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    column-gap: 0;
+    padding-right: 0;
+  }
+}

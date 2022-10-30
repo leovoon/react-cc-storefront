@@ -1,0 +1,42 @@
+.productDetail__imageviewer {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+}
+
+.imageBar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow-y: scroll;
+  max-height: 550px;
+}
+
+.imageBar__image {
+  width: 79px;
+  height: 80px;
+  cursor: pointer;
+  background-color: #c4c4c4;
+  border: 1px solid #c4c4c4;
+}
+
+.imageBar__image img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  background-color: cover;
+}
+
+.imageView {
+  padding-left: -1rem;
+  border: 1px solid #e2e2e2;
+  max-height: 550px;
+}
+
+.imageView img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  background-color: #c4c4c4;
+}

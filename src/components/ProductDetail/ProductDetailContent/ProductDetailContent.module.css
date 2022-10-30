@@ -1,0 +1,17 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  row-gap: 1.5rem;
+}
+
+.addToCartButton {
+  width: 292px;
+  height: 52px;
+}
+
+.addToCartButton[disabled] {
+  background-color: #d8d8d8;
+  color: #a8a8a8;
+}

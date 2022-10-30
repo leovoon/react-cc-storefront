@@ -1,0 +1,8 @@
+.container {
+  width: inherit;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+}
