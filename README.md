@@ -34,5 +34,5 @@ Start the server
 
 ## Acknowledgements
 
-- [GraphQL endpoint](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+- [GraphQL endpoint](https://github.com/scandiweb/junior-react-endpoint)
 - [Mockup Design](<https://www.figma.com/file/MSyCAqVy1UgNap0pvqH6H3/Junior-Frontend-Test-Designs-(Public)?node-id=0%3A1>)
