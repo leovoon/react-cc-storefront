@@ -12,10 +12,8 @@ export default class ProductPriceTag extends PureComponent<{
       <div>
         {!noTitle && <div className={styles.title}>PRICE:</div>}
         <div className={`${styles.priceTag} ${mini && styles.mini}`}>
-          <span className={styles.priceTag__currency}>
-            {price.currency.symbol}
-          </span>
-          <span className={styles.priceTag__amount}>{price.amount}</span>
+          <span>{price.currency.symbol}</span>
+          <span>{price.amount}</span>
         </div>
       </div>
     )
