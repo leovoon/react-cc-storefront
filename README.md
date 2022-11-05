@@ -32,7 +32,10 @@ Start the server
 
 - [@leovoon](https://www.github.com/leovoon)
 
-## Acknowledgements
+## Acknowledgments
 
 - [GraphQL endpoint](https://github.com/scandiweb/junior-react-endpoint)
 - [Mockup Design](<https://www.figma.com/file/MSyCAqVy1UgNap0pvqH6H3/Junior-Frontend-Test-Designs-(Public)?node-id=0%3A1>)
+
+## Other 
+also check out [react-fc-storefront](https://github.com/leovoon/react-fc-storefront) based functional components.
