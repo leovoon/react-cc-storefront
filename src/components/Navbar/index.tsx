@@ -45,7 +45,7 @@ class Navbar extends PureComponent<NavbarProps> {
     const { categories, currencies } = this.props
 
     if (categories.isLoading || currencies.isLoading) {
-      return <Spinner />
+      return <div>Loading...</div>
     }
 
     if (!categories.data || !currencies.data) {
@@ -62,7 +62,10 @@ class Navbar extends PureComponent<NavbarProps> {
           {categories.isSuccess &&
             categories.data.map((category, id) => (
               <NavLink
+                id={category.name}
+                role={'link'}
                 key={id}
+                aria-label={category.name}
                 className={styles.navlink}
                 style={({ isActive }) =>
                   isActive ? this.state.activeStyle : {}
