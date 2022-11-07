@@ -5,8 +5,7 @@
   line-height: 26px;
   color: #1d1f22;
   margin-top: 40px;
-  max-height: 300px;
-  overflow: scroll;
+  max-height: max-content;
 }
 .description div {
   width: 100%;
