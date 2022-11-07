@@ -61,7 +61,11 @@ class CartMini extends PureComponent<CartMiniPropsType> {
               title="go to cart page"
               aria-label="go to cart page"
             >
-              <BaseButton className={styles.button} plain>
+              <BaseButton
+                onClick={() => this.props.onOverlayClick()}
+                className={styles.button}
+                plain
+              >
                 view bag
               </BaseButton>
             </Link>
