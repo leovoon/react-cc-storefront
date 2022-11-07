@@ -1,4 +1,10 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit'
+import {
+  configureStore,
+  ThunkAction,
+  Action,
+  combineReducers,
+  PreloadedState,
+} from '@reduxjs/toolkit'
 import { currencyAPI } from './features/currency/services/currency.service'
 import currencySlice from './features/currency/currencySlice'
 import productSlice from './features/products/productSlice'
@@ -16,7 +22,26 @@ export const store = configureStore({
       .concat(productApi.middleware),
 })
 
+const rootReducer = combineReducers({
+  product: productSlice.reducer,
+  currency: currencySlice.reducer,
+  [currencyAPI.reducerPath]: currencyAPI.reducer,
+  [productApi.reducerPath]: productApi.reducer,
+})
+
+export function setupStore(preloadedState?: PreloadedState<RootState>) {
+  return configureStore({
+    reducer: rootReducer,
+    middleware: (getDefaultMiddleware) =>
+      getDefaultMiddleware()
+        .concat(currencyAPI.middleware)
+        .concat(productApi.middleware),
+    preloadedState,
+  })
+}
+
 export type AppDispatch = typeof store.dispatch
+export type AppStore = ReturnType<typeof setupStore>
 export type RootState = ReturnType<typeof store.getState>
 export type AppThunk<ReturnType = void> = ThunkAction<
   ReturnType,
