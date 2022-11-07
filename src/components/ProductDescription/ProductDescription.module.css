@@ -6,10 +6,11 @@
   color: #1d1f22;
   margin-top: 40px;
   max-height: max-content;
+  max-width: 310px;
+
 }
 .description div {
   width: 100%;
-  max-width: max-content;
   min-height: 300px;
 }
 

@@ -1,6 +1,7 @@
 .productDetail__imageviewer {
   display: grid;
   grid-template-columns: 0.2fr 1fr;
+  column-gap: 2rem;
 }
 
 .imageBar {
@@ -14,8 +15,8 @@
   width: 79px;
   height: 80px;
   cursor: pointer;
-  background-color: #c4c4c4;
-  border: 1px solid #c4c4c4;
+  background-color: #e2e2e2;
+  border: 1px solid #e2e2e2;
 }
 
 .imageBar__image img {
@@ -30,6 +31,9 @@
   padding-left: -1rem;
   border: 1px solid #e2e2e2;
   max-height: 550px;
+  width: 100%;
+  min-width: 610px;
+  height: auto;
 }
 
 .imageView img {
@@ -37,5 +41,4 @@
   height: 100%;
   aspect-ratio: 1/1;
   object-fit: contain;
-  background-color: #c4c4c4;
 }
