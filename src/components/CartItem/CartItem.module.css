@@ -58,3 +58,8 @@
   width: 24px;
   height: 24px;
 }
+
+.cartItem.mini .cartItem__quantityButtons > button > img {
+  width: 10px;
+  height: 10px;
+}
