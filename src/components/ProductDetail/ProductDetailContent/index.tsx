@@ -93,15 +93,14 @@ class ProductDetailSidebar extends PureComponent<ProductDetailSidebarProps> {
       <div className={styles.content}>
         <ProductBrandName brand={brand} name={name} mini={false} />
 
-        <ProductPriceTag
-          price={this.getPriceFromSelectedCurrency()}
-          mini={false}
-        />
-
         <ProductAttributes
           editMode
           attributes={attributes}
           productId={id}
+          mini={false}
+        />
+        <ProductPriceTag
+          price={this.getPriceFromSelectedCurrency()}
           mini={false}
         />
 
